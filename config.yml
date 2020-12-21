@@ -1,0 +1,24 @@
+mosquitto:
+  client_id: RANDOM-NAME-WHAT-EVER-YOU-WANT
+rclone:
+  host: 127.0.0.1
+  port: 5590
+autoscan:
+  host: 127.0.0.1
+  port: 3030
+mount:
+  path: /mnt/unionfs
+  exclude_bucket_prefix: true
+  exclusions:
+    - zd-audiobooks-non-english
+    - zd-comics
+    - zd-ebooks-non-english
+    - zd-software
+    - zd-tv-non-english
+    - zd-movies-non-english
+    - zd-movies
+# If you want to use PAS instead of autoscan uncomment these lines
+# plex_autoscan:
+#  host: 127.0.0.1
+#  port: 3468
+#  server_pass: XXXXX
